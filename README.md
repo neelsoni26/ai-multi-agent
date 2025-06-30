@@ -1,4 +1,4 @@
-# arxiv-ai-summarizer
+# AI-Multi-Agent
 
 A multi-agent AI system that fetches research papers from arXiv and summarizes them in a literature review format. This project leverages OpenAI's language model to streamline the research process by providing concise and informative summaries of relevant academic papers.
 
@@ -24,28 +24,26 @@ A multi-agent AI system that fetches research papers from arXiv and summarizes t
    cd ai-multi-agent
 
 2. Install the required packages:
-    ```bash
+   ```bash
     pip install -r requirements.txt
 
 3. Set up your environment variables:
 * Create a `.env` file in the root directory and add your OpenAI API key:
 
-    ```Code
-    OPENAI_API_KEY="your_openai_api_key"
+   ```python
+   OPENAI_API_KEY="your_openai_api_key"
 
 ## Usage
 To run the project, execute the following command:
+   ```bash
+   python agent-be.py
 
-    ```bash
-    python agent-be.py
-    ```
- 
+
 ## Example
 You can modify the `task` variable in the `run_team` function to change the topic of the literature review. For example:
-
-    ```python
-    task = "Conduct a literature review on the topic - Machine Learning and return exactly 5 papers."
-    ```
+   ```python
+   task = "Conduct a literature review on the topic - Machine Learning and return exactly 5 papers."
+    
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
